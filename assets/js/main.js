@@ -101,6 +101,34 @@
     syncButtons();
   });
 
+  /* ---- live npm stats ---- */
+  (function () {
+    var PKG = 'react-native-agenda-kit';
+    var dl = document.getElementById('npmDownloads');
+    var ver = document.getElementById('npmVersion');
+    if (!dl && !ver) return;
+
+    if (dl) {
+      fetch('https://api.npmjs.org/downloads/point/last-month/' + PKG)
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (d) {
+          if (d && typeof d.downloads === 'number') {
+            dl.textContent = d.downloads.toLocaleString();
+          } else {
+            dl.textContent = '—';
+          }
+        })
+        .catch(function () { dl.textContent = '—'; });
+    }
+
+    if (ver) {
+      fetch('https://registry.npmjs.org/' + PKG + '/latest')
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (d) { if (d && d.version) ver.textContent = 'v' + d.version; })
+        .catch(function () {});
+    }
+  })();
+
   /* ---- lightbox ---- */
   var lb = document.getElementById('lightbox');
   var lbImg = document.getElementById('lbImg');

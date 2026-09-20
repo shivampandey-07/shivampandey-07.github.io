@@ -87,7 +87,7 @@
     <div class="section-head reveal">
       <p class="kicker">Selected work</p>
       <h2>Live apps you can download today</h2>
-      <p class="sub">Three products I built and shipped to the App Store and Google Play. Screens below are from the live store listings.</p>
+      <p class="sub">Four products I built and shipped to the App Store and Google Play. Every screen below is from the live store listing.</p>
     </div>
 
     <!-- DOCZE -->
@@ -207,6 +207,44 @@
         <div class="rail-nav"><button data-prev aria-label="Previous screenshot">‹</button><button data-next aria-label="Next screenshot">›</button></div>
       </div>
     </article>
+
+    <!-- JOP -->
+    <article class="project reveal">
+      <div class="project-info">
+        <img class="app-icon" src="assets/icons/jop.png" alt="JOP app icon" width="72" height="72" loading="lazy">
+        <h3>JOP</h3>
+        <p class="project-tag">OKR &amp; Employee Engagement Platform</p>
+        <p class="project-body">An OKR platform for companies that run on objectives and key results — teams set objectives, work a daily action list against deadlines, answer engagement surveys, and browse the people directory, all from one dashboard.</p>
+        <ul class="bullets">
+          <li>Objectives and key results with progress dashboards</li>
+          <li>Daily action lists, upcoming deadlines and reminders</li>
+          <li>Engagement surveys and feedback flows</li>
+          <li>People directory with profiles and team discovery</li>
+        </ul>
+        <ul class="chips">
+          <li>React Native</li><li>Dashboards</li><li>Surveys</li><li>REST APIs</li><li>Notifications</li>
+        </ul>
+        <div class="store-links">
+          <a class="store" href="https://apps.apple.com/us/app/jop/id1626959591" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 12.53c-.02-2.3 1.88-3.4 1.96-3.45-1.07-1.56-2.73-1.78-3.32-1.8-1.42-.14-2.77.83-3.49.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.77 2.28-1.61 2.79-.41 6.92 1.15 9.18.76 1.11 1.67 2.35 2.86 2.31 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 2.99.72 1.24-.02 2.02-1.13 2.78-2.24.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.41-.93-2.44-3.69M14.9 5.36c.63-.77 1.06-1.83.94-2.9-.91.04-2.01.61-2.67 1.37-.59.67-1.1 1.76-.96 2.79 1.02.08 2.06-.51 2.69-1.26"/></svg>
+            App Store
+          </a>
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.saffrontech.jopedge" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.4a1 1 0 0 0-.5.9v17.4a1 1 0 0 0 .5.9l9.2-9.6zm10.6 8l2.7-2.8-9.6-5.4a1 1 0 0 0-.4-.1zm0 3.2l-7.3 8.3a1 1 0 0 0 .4-.1l9.6-5.4zm1.4-1.5l3.3-1.9a1 1 0 0 0 0-1.8L15.6 8.5l-2.4 2.5z"/></svg>
+            Google Play
+          </a>
+        </div>
+      </div>
+      <div class="project-shots">
+        <div class="rail rail-flat" data-rail>
+          <figure class="flat"><img src="assets/shots/jop-1.jpg" alt="JOP dashboard with today's actions, deadlines and survey alerts" width="800" height="1422" loading="lazy" data-zoom></figure>
+          <figure class="flat"><img src="assets/shots/jop-2.jpg" alt="JOP Voice screen listing active and completed engagement surveys" width="800" height="1422" loading="lazy" data-zoom></figure>
+          <figure class="flat"><img src="assets/shots/jop-3.jpg" alt="JOP People directory showing a team member profile card" width="800" height="1422" loading="lazy" data-zoom></figure>
+          <figure class="flat"><img src="assets/shots/jop-4.jpg" alt="JOP settings screen with profile, password and feedback options" width="800" height="1422" loading="lazy" data-zoom></figure>
+        </div>
+        <div class="rail-nav"><button data-prev aria-label="Previous screenshot">‹</button><button data-next aria-label="Next screenshot">›</button></div>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -216,12 +254,25 @@
     <div class="section-head reveal">
       <p class="kicker">Open source</p>
       <h2>react-native-agenda-kit</h2>
-      <p class="sub">An expandable calendar, agenda and day-timeline library for React Native — published to npm under MIT.</p>
+      <p class="sub">An expandable calendar, agenda and day-timeline library for React Native — authored, documented and published to npm under MIT.</p>
     </div>
+
+    <div class="lib-stats reveal">
+      <div class="lib-stat"><b id="npmVersion">v0.1.0</b><span>Latest on npm</span></div>
+      <div class="lib-stat"><b id="npmDownloads">—</b><span>Downloads / month</span></div>
+      <div class="lib-stat"><b>0</b><span>Runtime dependencies</span></div>
+      <div class="lib-stat"><b>MIT</b><span>Licensed &amp; open</span></div>
+    </div>
+
+    <figure class="shot-card reveal">
+      <img src="assets/lib/hero.svg" alt="Three states of react-native-agenda-kit: expandable calendar with agenda list, the month grid dragged open, and the day timeline with overlap packing" width="920" height="452" loading="lazy">
+      <figcaption>Three surfaces from one date owner — expandable calendar + agenda list, the month grid dragged open, and the day timeline.</figcaption>
+    </figure>
 
     <div class="oss-card reveal">
       <div class="oss-body">
-        <p>Most calendar libraries measure row heights at runtime, which costs a frame every time the agenda scrolls. This one takes declared row heights and syncs scroll position on the UI thread with Reanimated worklets, so layout measurement never happens during a scroll — the agenda stays at 60fps on lists that used to stutter.</p>
+        <h3 class="mini-head">Why it stays at 60fps</h3>
+        <p>Most calendar libraries measure row heights at runtime, which costs a frame every time the agenda scrolls. This one takes declared row heights and syncs scroll position on the UI thread with Reanimated worklets, so layout measurement never happens during a scroll — the agenda stays smooth on lists that used to stutter.</p>
         <ul class="bullets">
           <li>Worklet-driven scroll sync; no runtime layout measurement</li>
           <li>Bundled TypeScript types and dual ESM&nbsp;+&nbsp;CJS builds</li>
@@ -229,7 +280,7 @@
           <li>Works with Expo and React Native CLI, on iOS and Android</li>
         </ul>
         <ul class="chips">
-          <li>TypeScript</li><li>Reanimated Worklets</li><li>ESM + CJS</li><li>MIT</li>
+          <li>TypeScript</li><li>Reanimated Worklets</li><li>ESM + CJS</li><li>Expo &amp; RN CLI</li>
         </ul>
         <div class="store-links">
           <a class="store" href="https://www.npmjs.com/package/react-native-agenda-kit" target="_blank" rel="noopener">
@@ -254,8 +305,14 @@
   <span class="a">onDayPress</span>={handleDay}
 /&gt;</code></pre>
     </div>
+
+    <figure class="shot-card reveal">
+      <img src="assets/lib/architecture.svg" alt="Architecture diagram: the JS thread owns the committed date via CalendarProvider, while shared values on the UI thread drive the calendar, agenda list and timeline through worklets" width="880" height="536" loading="lazy">
+      <figcaption>The architecture: one date owner on the JS thread, one integer index space, and shared values that every scroll handler on the UI thread reads and writes.</figcaption>
+    </figure>
   </div>
 </section>
+
 
 <!-- ───────────────────────── EXPERIENCE ───────────────────────── -->
 <section id="experience" class="section">

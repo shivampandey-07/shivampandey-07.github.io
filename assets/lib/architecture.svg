@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 464" width="900" height="464" role="img" aria-label="One date owner and one integer index space feeding three surfaces across the JS and UI threads">
+<defs>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5B6FAE"/></marker>
+<marker id="arg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6F6F6F"/></marker>
+</defs>
+<rect width="900" height="464" rx="14" fill="#FAFAFA" stroke="#E4E4E4"/>
+<text x="450.0" y="28" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#1F1F1F">One date owner, one integer index space</text>
+<rect x="16" y="44" width="868" height="152" rx="10" fill="#FFFFFF" stroke="#E4E4E4" stroke-dasharray="4 4"/>
+<rect x="16" y="212" width="868" height="202" rx="10" fill="#F7F8FB" stroke="#E4E4E4" stroke-dasharray="4 4"/>
+<text x="34" y="62" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10" font-weight="700" fill="#6F6F6F">JS THREAD</text>
+<text x="34" y="230" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10" font-weight="700" fill="#5B6FAE">UI THREAD  (worklets)</text>
+<rect x="44" y="76" width="196" height="104" rx="10" fill="#FFFFFF" stroke="#DDDDDD"/>
+<text x="142.0" y="99" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#1F1F1F">Your screen</text>
+<text x="142.0" y="119" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">date state</text>
+<text x="142.0" y="134" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">sections / events</text>
+<text x="142.0" y="149" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">renderItem, renderEvent</text>
+<rect x="320" y="76" width="246" height="104" rx="10" fill="#FFFFFF" stroke="#DDDDDD"/>
+<text x="443.0" y="99" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#1F1F1F">CalendarProvider</text>
+<text x="443.0" y="119" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">owns the committed date</text>
+<text x="443.0" y="134" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">echo queue (last 8 emissions)</text>
+<text x="443.0" y="149" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">publishes the shared store</text>
+<rect x="646" y="76" width="210" height="104" rx="10" fill="#FFFFFF" stroke="#DDDDDD"/>
+<text x="751.0" y="99" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#1F1F1F">buildRange(...)</text>
+<text x="751.0" y="119" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">padded to whole weeks</text>
+<text x="751.0" y="134" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">ymdByIndex built once</text>
+<text x="751.0" y="149" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">dayIndexOf = one subtraction</text>
+<line x1="240" y1="112" x2="314" y2="112" stroke="#5B6FAE" stroke-width="1.6" marker-end="url(#ar)"/>
+<text x="277" y="105" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="9.5" font-weight="400" fill="#5B6FAE">date</text>
+<line x1="314" y1="148" x2="240" y2="148" stroke="#6F6F6F" stroke-width="1.4" marker-end="url(#arg)"/>
+<text x="277" y="166" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="9.5" font-weight="400" fill="#6F6F6F">onDateChanged</text>
+<line x1="640" y1="128" x2="572" y2="128" stroke="#6F6F6F" stroke-width="1.4" marker-end="url(#arg)"/>
+<text x="606" y="121" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="9.5" font-weight="400" fill="#6F6F6F">range</text>
+<rect x="288" y="246" width="324" height="68" rx="10" fill="#E8EBF4" stroke="#5B6FAE"/>
+<text x="450.0" y="269" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#1F1F1F">Shared values</text>
+<text x="450.0" y="289" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">dayIndex  ·  move { seq, idx, origin }  ·  listDragSeq</text>
+<text x="450.0" y="304" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">written and read by every scroll handler</text>
+<line x1="450" y1="184" x2="450" y2="240" stroke="#5B6FAE" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="44" y="348" width="250" height="54" rx="10" fill="#FFFFFF" stroke="#DDDDDD"/>
+<text x="169.0" y="371" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#1F1F1F">ExpandableCalendar</text>
+<text x="169.0" y="391" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">page = floor(idx / 7)</text>
+<line x1="169" y1="328" x2="169" y2="342" stroke="#5B6FAE" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="318" y="348" width="250" height="54" rx="10" fill="#FFFFFF" stroke="#DDDDDD"/>
+<text x="443.0" y="371" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#1F1F1F">AgendaList</text>
+<text x="443.0" y="391" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">section index = idx</text>
+<line x1="443" y1="328" x2="443" y2="342" stroke="#5B6FAE" stroke-width="1.6" marker-end="url(#ar)"/>
+<rect x="592" y="348" width="250" height="54" rx="10" fill="#FFFFFF" stroke="#DDDDDD"/>
+<text x="717.0" y="371" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#1F1F1F">TimelineList</text>
+<text x="717.0" y="391" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" fill="#6F6F6F">column = idx</text>
+<line x1="717" y1="328" x2="717" y2="342" stroke="#5B6FAE" stroke-width="1.6" marker-end="url(#ar)"/>
+<path d="M169,314 L169,328 L717,328 L717,314" fill="none" stroke="#5B6FAE" stroke-width="1.6"/>
+<text x="450.0" y="434" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" font-weight="400" fill="#1F1F1F">Each surface ignores the moves it produced itself — no latches, no timers, no changedItems bookkeeping.</text>
+<text x="450.0" y="450" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="10.5" font-weight="400" fill="#6F6F6F">The JS thread is told only at settle.</text>
+</svg>
