@@ -1,10 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shivam Pandey — Senior React Native Engineer</title>
+<meta name="description" content="Senior React Native Engineer with 5+ years shipping production iOS and Android apps across healthcare, enterprise, mobility and consumer products. TypeScript, native integrations, AI-powered mobile features.">
+<meta name="author" content="Shivam Pandey">
+<meta name="theme-color" content="#0a0d14">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shivam Pandey — Senior React Native Engineer">
+<meta property="og:description" content="5+ years shipping production iOS and Android apps. TypeScript, offline-first architecture, native modules, AI-integrated mobile features.">
+<meta property="og:url" content="https://shivampandey-07.github.io/">
+<meta property="og:image" content="https://shivampandey-07.github.io/assets/shots/docze-1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230a0d14'/><text y='68' x='50' font-size='54' font-family='system-ui,sans-serif' font-weight='700' fill='%234d9fff' text-anchor='middle'>S</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <h1>Welcome to my blog — Shivam pandey</h1>
+
+<a class="skip" href="#work">Skip to work</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top"><span class="brand-mark">SP</span> Shivam Pandey</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#oss">Open Source</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ───────────────────────── HERO ───────────────────────── -->
+<section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow reveal"><span class="pulse"></span> Available for senior mobile roles</p>
+      <h1 class="reveal">Senior <span class="grad">React&nbsp;Native</span> Engineer building production iOS&nbsp;&amp;&nbsp;Android apps.</h1>
+      <p class="lede reveal">5+ years shipping apps across healthcare, enterprise, mobility and consumer products — TypeScript, offline-first architecture, native integrations, and AI-powered features. I own the work end to end, from architecture to App&nbsp;Store release and production support.</p>
+
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#work">See my work <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-ghost" href="mailto:shivammpandey23@gmail.com">Get in touch</a>
+      </div>
+
+      <ul class="hero-meta reveal">
+        <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5c2.5 0 4.5 2 4.5 4.5 0 3.2-4.5 8.5-4.5 8.5S3.5 9.2 3.5 6C3.5 3.5 5.5 1.5 8 1.5z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="8" cy="6" r="1.7" fill="currentColor"/></svg> New Delhi, India</li>
+        <li><a href="https://github.com/shivampandey-07" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/shivam-pandey07" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.npmjs.com/package/react-native-agenda-kit" target="_blank" rel="noopener">npm</a></li>
+      </ul>
+    </div>
+
+    <div class="hero-stats reveal">
+      <div class="stat"><b>5+</b><span>Years shipping<br>React Native</span></div>
+      <div class="stat"><b>15+</b><span>Apps &amp; modules<br>in production</span></div>
+      <div class="stat"><b>1</b><span>Open-source<br>npm library</span></div>
+      <div class="stat"><b>2</b><span>Platforms owned<br>iOS &amp; Android</span></div>
+    </div>
+  </div>
+
+  <div class="logos wrap reveal">
+    <span>Worked on products for</span>
+    <div class="logo-row">
+      <em>Starbucks</em><em>KFC</em><em>Panasonic</em><em>MapmyIndia</em><em>Shrimad Rajchandra Mission</em>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── WORK ───────────────────────── -->
+<section id="work" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Selected work</p>
+      <h2>Live apps you can download today</h2>
+      <p class="sub">Three products I built and shipped to the App Store and Google Play. Screens below are from the live store listings.</p>
+    </div>
+
+    <!-- DOCZE -->
+    <article class="project reveal">
+      <div class="project-info">
+        <img class="app-icon" src="assets/icons/docze.png" alt="Docze app icon" width="72" height="72" loading="lazy">
+        <h3>Docze</h3>
+        <p class="project-tag">Medical Appointments &amp; Healthcare Platform</p>
+        <p class="project-body">A doctor-discovery and booking platform where patients browse full practitioner profiles, book appointments, hold online consultations, and manage records, prescriptions and secure messaging — with authentication and notification workflows throughout.</p>
+        <ul class="bullets">
+          <li>Doctor discovery, profiles and real-time slot booking</li>
+          <li>Online consultations, secure messaging and prescriptions</li>
+          <li>Patient records with secure storage and API synchronisation</li>
+          <li>Cross-platform performance tuning for a production healthcare experience</li>
+        </ul>
+        <ul class="chips">
+          <li>React Native</li><li>TypeScript</li><li>REST APIs</li><li>Firebase</li><li>Push Notifications</li><li>Secure Storage</li>
+        </ul>
+        <div class="store-links">
+          <a class="store" href="https://apps.apple.com/lu/app/docze-doctor-appointments/id6793104519" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 12.53c-.02-2.3 1.88-3.4 1.96-3.45-1.07-1.56-2.73-1.78-3.32-1.8-1.42-.14-2.77.83-3.49.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.77 2.28-1.61 2.79-.41 6.92 1.15 9.18.76 1.11 1.67 2.35 2.86 2.31 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 2.99.72 1.24-.02 2.02-1.13 2.78-2.24.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.41-.93-2.44-3.69M14.9 5.36c.63-.77 1.06-1.83.94-2.9-.91.04-2.01.61-2.67 1.37-.59.67-1.1 1.76-.96 2.79 1.02.08 2.06-.51 2.69-1.26"/></svg>
+            App Store
+          </a>
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.docze" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.4a1 1 0 0 0-.5.9v17.4a1 1 0 0 0 .5.9l9.2-9.6zm10.6 8l2.7-2.8-9.6-5.4a1 1 0 0 0-.4-.1zm0 3.2l-7.3 8.3a1 1 0 0 0 .4-.1l9.6-5.4zm1.4-1.5l3.3-1.9a1 1 0 0 0 0-1.8L15.6 8.5l-2.4 2.5z"/></svg>
+            Google Play
+          </a>
+        </div>
+      </div>
+      <div class="project-shots">
+        <div class="rail" data-rail>
+          <figure class="phone"><img src="assets/shots/docze-1.jpg" alt="Docze home screen with doctor search and specialities" width="800" height="1731" loading="lazy" data-zoom></figure>
+          <figure class="phone"><img src="assets/shots/docze-2.jpg" alt="Docze doctor listing screen" width="800" height="1731" loading="lazy" data-zoom></figure>
+          <figure class="phone"><img src="assets/shots/docze-3.jpg" alt="Docze doctor profile screen" width="800" height="1731" loading="lazy" data-zoom></figure>
+          <figure class="phone"><img src="assets/shots/docze-4.jpg" alt="Docze appointment booking screen" width="800" height="1731" loading="lazy" data-zoom></figure>
+          <figure class="phone"><img src="assets/shots/docze-5.jpg" alt="Docze consultation and records screen" width="800" height="1731" loading="lazy" data-zoom></figure>
+        </div>
+        <div class="rail-nav"><button data-prev aria-label="Previous screenshot">‹</button><button data-next aria-label="Next screenshot">›</button></div>
+      </div>
+    </article>
+
+    <!-- SRM -->
+    <article class="project reveal">
+      <div class="project-info">
+        <img class="app-icon" src="assets/icons/srm.png" alt="SRM app icon" width="72" height="72" loading="lazy">
+        <h3>SRM — Wisdom by Sri Guru</h3>
+        <p class="project-tag">Meditation, Devotional Media &amp; Live Events</p>
+        <p class="project-body">A spiritual wellbeing app for a global non-profit: guided meditation, devotional music streaming, weekly video content, daily feeds and live events — all working offline once downloaded, with media that keeps playing in the background.</p>
+        <ul class="bullets">
+          <li>Background audio/video playback with lock-screen controls</li>
+          <li>Offline downloads and a resilient local media library</li>
+          <li>Live-event experiences, daily feeds and content workflows</li>
+          <li>Deep linking and push notifications across iOS and Android</li>
+        </ul>
+        <ul class="chips">
+          <li>React Native</li><li>Audio/Video</li><li>Offline Downloads</li><li>Deep Linking</li><li>Push Notifications</li>
+        </ul>
+        <div class="store-links">
+          <a class="store" href="https://apps.apple.com/lu/app/srm-wisdom-by-sri-guru/id6720721343" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 12.53c-.02-2.3 1.88-3.4 1.96-3.45-1.07-1.56-2.73-1.78-3.32-1.8-1.42-.14-2.77.83-3.49.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.77 2.28-1.61 2.79-.41 6.92 1.15 9.18.76 1.11 1.67 2.35 2.86 2.31 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 2.99.72 1.24-.02 2.02-1.13 2.78-2.24.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.41-.93-2.44-3.69M14.9 5.36c.63-.77 1.06-1.83.94-2.9-.91.04-2.01.61-2.67 1.37-.59.67-1.1 1.76-.96 2.79 1.02.08 2.06-.51 2.69-1.26"/></svg>
+            App Store
+          </a>
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.simple.srm" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.4a1 1 0 0 0-.5.9v17.4a1 1 0 0 0 .5.9l9.2-9.6zm10.6 8l2.7-2.8-9.6-5.4a1 1 0 0 0-.4-.1zm0 3.2l-7.3 8.3a1 1 0 0 0 .4-.1l9.6-5.4zm1.4-1.5l3.3-1.9a1 1 0 0 0 0-1.8L15.6 8.5l-2.4 2.5z"/></svg>
+            Google Play
+          </a>
+        </div>
+      </div>
+      <div class="project-shots">
+        <div class="rail" data-rail>
+          <figure class="phone"><img src="assets/shots/srm-1.jpg" alt="SRM home feed" width="800" height="1738" loading="lazy" data-zoom></figure>
+          <figure class="phone"><img src="assets/shots/srm-2.jpg" alt="SRM devotional music section" width="800" height="1738" loading="lazy" data-zoom></figure>
+          <figure class="phone"><img src="assets/shots/srm-3.jpg" alt="SRM content library screen" width="800" height="1738" loading="lazy" data-zoom></figure>
+          <figure class="phone"><img src="assets/shots/srm-4.jpg" alt="SRM live events screen" width="800" height="1738" loading="lazy" data-zoom></figure>
+          <figure class="phone"><img src="assets/shots/srm-5.jpg" alt="SRM guided meditation player" width="800" height="1738" loading="lazy" data-zoom></figure>
+        </div>
+        <div class="rail-nav"><button data-prev aria-label="Previous screenshot">‹</button><button data-next aria-label="Next screenshot">›</button></div>
+      </div>
+    </article>
+
+    <!-- PASTORAL REACH -->
+    <article class="project reveal">
+      <div class="project-info">
+        <img class="app-icon" src="assets/icons/pastoral.png" alt="Pastoral Reach app icon" width="72" height="72" loading="lazy">
+        <h3>Pastoral Reach</h3>
+        <p class="project-tag">Congregational Lifecycle Management</p>
+        <p class="project-body">A care-management platform for congregations to track the lifecycle events of their community — built around role-based workflows so the right person sees the right record, with audit history behind every change.</p>
+        <ul class="bullets">
+          <li>Lifecycle-event management with tasks and follow-ups</li>
+          <li>Role-based access, private notes and full audit histories</li>
+          <li>Filtering, assignment and automated reminder workflows</li>
+          <li>REST integration and notifications on both platforms</li>
+        </ul>
+        <ul class="chips">
+          <li>React Native</li><li>REST APIs</li><li>Role-Based Access</li><li>Notifications</li>
+        </ul>
+        <div class="store-links">
+          <a class="store" href="https://apps.apple.com/us/app/pastoral-reach/id6463698365" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 12.53c-.02-2.3 1.88-3.4 1.96-3.45-1.07-1.56-2.73-1.78-3.32-1.8-1.42-.14-2.77.83-3.49.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.77 2.28-1.61 2.79-.41 6.92 1.15 9.18.76 1.11 1.67 2.35 2.86 2.31 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 2.99.72 1.24-.02 2.02-1.13 2.78-2.24.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.41-.93-2.44-3.69M14.9 5.36c.63-.77 1.06-1.83.94-2.9-.91.04-2.01.61-2.67 1.37-.59.67-1.1 1.76-.96 2.79 1.02.08 2.06-.51 2.69-1.26"/></svg>
+            App Store
+          </a>
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.pastoralreachmobileapp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.4a1 1 0 0 0-.5.9v17.4a1 1 0 0 0 .5.9l9.2-9.6zm10.6 8l2.7-2.8-9.6-5.4a1 1 0 0 0-.4-.1zm0 3.2l-7.3 8.3a1 1 0 0 0 .4-.1l9.6-5.4zm1.4-1.5l3.3-1.9a1 1 0 0 0 0-1.8L15.6 8.5l-2.4 2.5z"/></svg>
+            Google Play
+          </a>
+        </div>
+      </div>
+      <div class="project-shots">
+        <div class="rail" data-rail>
+          <figure class="phone"><img src="assets/shots/pastoral-1.jpg" alt="Pastoral Reach dashboard" width="800" height="1734" loading="lazy" data-zoom></figure>
+          <figure class="phone"><img src="assets/shots/pastoral-2.jpg" alt="Pastoral Reach lifecycle events list" width="800" height="1734" loading="lazy" data-zoom></figure>
+          <figure class="phone"><img src="assets/shots/pastoral-3.jpg" alt="Pastoral Reach member record" width="800" height="1734" loading="lazy" data-zoom></figure>
+          <figure class="phone"><img src="assets/shots/pastoral-4.jpg" alt="Pastoral Reach task and follow-up screen" width="800" height="1734" loading="lazy" data-zoom></figure>
+          <figure class="phone"><img src="assets/shots/pastoral-5.jpg" alt="Pastoral Reach notes and history screen" width="800" height="1734" loading="lazy" data-zoom></figure>
+          <figure class="phone"><img src="assets/shots/pastoral-6.jpg" alt="Pastoral Reach reminders screen" width="800" height="1734" loading="lazy" data-zoom></figure>
+        </div>
+        <div class="rail-nav"><button data-prev aria-label="Previous screenshot">‹</button><button data-next aria-label="Next screenshot">›</button></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ───────────────────────── OPEN SOURCE ───────────────────────── -->
+<section id="oss" class="section section-alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Open source</p>
+      <h2>react-native-agenda-kit</h2>
+      <p class="sub">An expandable calendar, agenda and day-timeline library for React Native — published to npm under MIT.</p>
+    </div>
+
+    <div class="oss-card reveal">
+      <div class="oss-body">
+        <p>Most calendar libraries measure row heights at runtime, which costs a frame every time the agenda scrolls. This one takes declared row heights and syncs scroll position on the UI thread with Reanimated worklets, so layout measurement never happens during a scroll — the agenda stays at 60fps on lists that used to stutter.</p>
+        <ul class="bullets">
+          <li>Worklet-driven scroll sync; no runtime layout measurement</li>
+          <li>Bundled TypeScript types and dual ESM&nbsp;+&nbsp;CJS builds</li>
+          <li><strong>Zero</strong> runtime dependencies</li>
+          <li>Works with Expo and React Native CLI, on iOS and Android</li>
+        </ul>
+        <ul class="chips">
+          <li>TypeScript</li><li>Reanimated Worklets</li><li>ESM + CJS</li><li>MIT</li>
+        </ul>
+        <div class="store-links">
+          <a class="store" href="https://www.npmjs.com/package/react-native-agenda-kit" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 6h20v11h-10v2H7v-2H2zm3 3v5h2V11h2v3h2V9zm8 0v5h2v-3h2v3h2V9z"/></svg>
+            View on npm
+          </a>
+          <a class="store" href="https://github.com/shivampandey-07/react-native-agenda-kit" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2"/></svg>
+            Source on GitHub
+          </a>
+        </div>
+      </div>
+      <pre class="code" aria-label="Installation example"><code><span class="c">// install</span>
+<span class="k">npm</span> install react-native-agenda-kit
+
+<span class="c">// use</span>
+<span class="k">import</span> { <span class="t">Agenda</span> } <span class="k">from</span> <span class="s">'react-native-agenda-kit'</span>;
+
+&lt;<span class="t">Agenda</span>
+  <span class="a">items</span>={items}
+  <span class="a">rowHeight</span>={<span class="n">72</span>}
+  <span class="a">onDayPress</span>={handleDay}
+/&gt;</code></pre>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── EXPERIENCE ───────────────────────── -->
+<section id="experience" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Experience</p>
+      <h2>Where I've shipped</h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="reveal">
+        <div class="tl-when">Jul 2025 — Present</div>
+        <div class="tl-what">
+          <h3>Senior Mobile Engineer — React Native</h3>
+          <p class="tl-co">Arthacore IT Solution Pvt. Ltd. · Gurugram</p>
+          <ul class="bullets">
+            <li>Own architecture and end-to-end delivery of React Native apps on iOS and Android, from feature planning through production release and post-launch support.</li>
+            <li>Integrated LLM APIs (OpenAI, Gemini, Claude) into mobile features — streaming responses, prompt construction, error fallbacks, and latency/cost trade-offs on mobile networks.</li>
+            <li>Build scalable features and reusable infrastructure focused on performance, accessibility, responsive UI and long-term maintainability.</li>
+            <li>Set up CI/CD automation for builds and tests; run reliable App Store, Google Play and OTA release workflows.</li>
+            <li>Resolve complex issues across rendering performance, startup time, offline data flows, platform-specific behaviour and native integrations.</li>
+            <li>Use AI coding tools (Copilot, Cursor, Claude Code) daily to accelerate implementation, tests and refactors, while leading code reviews and engineering standards.</li>
+          </ul>
+        </div>
+      </li>
+      <li class="reveal">
+        <div class="tl-when">Mar 2021 — Jun 2025</div>
+        <div class="tl-what">
+          <h3>Software Engineer — Hybrid Mobile App Developer</h3>
+          <p class="tl-co">Neuronimbus · Gurugram</p>
+          <ul class="bullets">
+            <li>Developed scalable React Native modules and production features for enterprise and consumer apps serving clients including Starbucks, KFC and Panasonic.</li>
+            <li>Integrated REST APIs, authentication, push notifications, offline storage, data synchronisation and automated tests, working closely with product, design, backend and QA.</li>
+            <li>Eliminated performance bottlenecks on data-heavy and animation-intensive screens, and maintained CI/CD pipelines for frequent releases.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ───────────────────────── MORE PROJECTS ───────────────────────── -->
+<section id="projects" class="section section-alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Also built</p>
+      <h2>Enterprise &amp; consumer products</h2>
+      <p class="sub">Internal and client apps where the screens aren't public, but the engineering was the same.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card reveal">
+        <h3>Starbucks Partner App</h3>
+        <p class="card-tag">Store Management &amp; Task Coordination</p>
+        <p>Store-site management with custom forms, role-based access, site visits, meetings, ticket logging and issue-management workflows.</p>
+        <ul class="chips"><li>React Native</li><li>Role-Based Access</li><li>Custom Forms</li></ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>SOJO Rides</h3>
+        <p class="card-tag">Last-Mile EV Transportation</p>
+        <p>An electric-vehicle ride-booking pilot with real-time tracking, route selection, shared rides, payments and ride allocation — supported by Panasonic and government stakeholders.</p>
+        <ul class="chips"><li>Maps</li><li>Real-Time Tracking</li><li>Payments</li></ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>myKFC &amp; AMConnected</h3>
+        <p class="card-tag">Employee Engagement Platforms</p>
+        <p>Social feeds, posts, media, likes, comments, polls, quizzes, surveys, notifications, reward points and redemption, and business updates — internal communication at scale.</p>
+        <ul class="chips"><li>Social Feed</li><li>Gamification</li><li>Native Integrations</li></ul>
+      </article>
+
+      <article class="card reveal">
+        <h3>Panasonic eCareWiz</h3>
+        <p class="card-tag">Service &amp; Warranty Management</p>
+        <p>Appliance information, warranty status, service requests and service-tracking experiences, delivered with backend and QA teams.</p>
+        <ul class="chips"><li>Service Tracking</li><li>Warranty Workflows</li><li>REST APIs</li></ul>
+        <a class="card-link" href="https://play.google.com/store/search?q=ecarewiz&amp;c=apps" target="_blank" rel="noopener">Google Play →</a>
+      </article>
+
+      <article class="card reveal card-muted">
+        <h3>And more</h3>
+        <p class="card-tag">Additional production work</p>
+        <p>Livepure · GetBook Bags · Lexon · MapmyIndia Maps API integration</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── SKILLS ───────────────────────── -->
+<section id="skills" class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Toolkit</p>
+      <h2>What I work with</h2>
+    </div>
+
+    <div class="skills">
+      <div class="skill reveal">
+        <h3>Mobile</h3>
+        <ul class="chips"><li>React Native (CLI &amp; Expo)</li><li>TypeScript</li><li>JavaScript</li><li>iOS &amp; Android</li><li>Reanimated</li><li>Deep Linking</li><li>Maps</li><li>Audio/Video</li></ul>
+      </div>
+      <div class="skill reveal">
+        <h3>State &amp; Data</h3>
+        <ul class="chips"><li>Redux / Redux Saga</li><li>Zustand</li><li>React Query</li><li>REST</li><li>GraphQL</li><li>WebSocket</li><li>SQLite &amp; Offline Storage</li><li>Sync</li></ul>
+      </div>
+      <div class="skill reveal">
+        <h3>AI Integration</h3>
+        <ul class="chips"><li>OpenAI</li><li>Gemini</li><li>Claude APIs</li><li>Streaming responses</li><li>Prompt design</li><li>AI chat &amp; content features</li><li>Copilot</li><li>Cursor</li><li>Claude Code</li></ul>
+      </div>
+      <div class="skill reveal">
+        <h3>Platform &amp; Backend</h3>
+        <ul class="chips"><li>Firebase Auth</li><li>Cloud Messaging</li><li>Crashlytics</li><li>Analytics</li><li>Push Notifications</li><li>Secure Storage</li><li>Native Modules</li></ul>
+      </div>
+      <div class="skill reveal">
+        <h3>Quality &amp; Delivery</h3>
+        <ul class="chips"><li>Jest</li><li>CI/CD</li><li>OTA Updates</li><li>App Store &amp; Google Play releases</li><li>Git</li><li>Code Review</li><li>Performance Profiling</li></ul>
+      </div>
+      <div class="skill reveal">
+        <h3>Currently learning</h3>
+        <ul class="chips"><li>Flutter</li><li>Dart</li></ul>
+      </div>
+    </div>
+
+    <div class="edu reveal">
+      <h3>Education</h3>
+      <p><strong>Bachelor of Computer Applications (BCA)</strong> — Guru Gobind Singh Indraprastha University, 2020</p>
+      <p>Class XII (PCM) — Central Board of Secondary Education, 2017</p>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── CONTACT ───────────────────────── -->
+<section id="contact" class="section contact">
+  <div class="wrap reveal">
+    <p class="kicker">Contact</p>
+    <h2>Let's build something that ships.</h2>
+    <p class="sub">Open to senior React Native roles and interesting mobile problems. The fastest way to reach me is email.</p>
+    <div class="contact-actions">
+      <a class="btn btn-primary" href="mailto:shivammpandey23@gmail.com">shivammpandey23@gmail.com</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/shivam-pandey07" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/shivampandey-07" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>© <span id="year">2026</span> Shivam Pandey — New Delhi, India</p>
+    <p class="foot-note">App screenshots are from the public App Store and Google Play listings of products I worked on. All trademarks belong to their respective owners.</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+  <img id="lbImg" src="" alt="">
+</div>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
